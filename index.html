@@ -24,25 +24,19 @@
           <div class="header__logo">
             <img
               src="assets/images/header__logo.png"
-              alt="Furniro logo"
+              alt="logo"
               class="header__logo-image"
             />
             <span class="header__logo-text">Furniro</span>
           </div>
+
           <ul class="header__menu">
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Home</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Shop</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">About</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Contact</a>
-            </li>
+            <li><a href="#" class="header__menu-link">Home</a></li>
+            <li><a href="#" class="header__menu-link">Shop</a></li>
+            <li><a href="#" class="header__menu-link">About</a></li>
+            <li><a href="#" class="header__menu-link">Contact</a></li>
           </ul>
+
           <div class="header__icons">
             <a href="#" class="header__icon"
               ><img src="assets/images/header__icon-user.png" alt="User"
@@ -51,7 +45,7 @@
               ><img src="assets/images/header__icon-search.png" alt="Search"
             /></a>
             <a href="#" class="header__icon"
-              ><img src="assets/images/header__icon-heart.png" alt="Heart"
+              ><img src="assets/images/header__icon-heart.png" alt="Wishlist"
             /></a>
             <a href="#" class="header__icon"
               ><img src="assets/images/header__icon-cart.png" alt="Cart"
@@ -70,9 +64,21 @@
           class="hero__icon"
         />
         <h1 class="hero__title">Contact</h1>
-        <p class="hero__breadcrumb">
-          <span>Home</span> <strong> > Contact</strong>
-        </p>
+      </div>
+      <div class="hero__breadcrumb">
+        <span>Home</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+        <strong>Contact</strong>
       </div>
     </section>
 
@@ -168,7 +174,6 @@
       </div>
     </section>
 
-    <!-- Features Section -->
     <section class="features">
       <div class="features__item">
         <img
@@ -176,7 +181,7 @@
           alt="High Quality"
           class="features__icon"
         />
-        <div>
+        <div class="features__content">
           <h3 class="features__title">High Quality</h3>
           <p class="features__text">crafted from top materials</p>
         </div>
@@ -187,7 +192,7 @@
           alt="Warranty Protection"
           class="features__icon"
         />
-        <div>
+        <div class="features__content">
           <h3 class="features__title">Warranty Protection</h3>
           <p class="features__text">Over 2 years</p>
         </div>
@@ -198,7 +203,7 @@
           alt="Free Shipping"
           class="features__icon"
         />
-        <div>
+        <div class="features__content">
           <h3 class="features__title">Free Shipping</h3>
           <p class="features__text">Order over 150 $</p>
         </div>
@@ -209,7 +214,7 @@
           alt="24 / 7 Support"
           class="features__icon"
         />
-        <div>
+        <div class="features__content">
           <h3 class="features__title">24 / 7 Support</h3>
           <p class="features__text">Dedicated support</p>
         </div>
@@ -217,62 +222,57 @@
     </section>
 
     <!-- Footer -->
+
     <footer class="footer">
       <hr class="features__separator" />
+
       <div class="footer__container">
+        <!-- Colonne marque + adresse -->
         <div class="footer__column">
           <h2 class="footer__brand">Furniro.</h2>
           <p class="footer__address">
-            400 University Drive Suite 200 Coral Gables,<br />FL 33134 USA
+            400 University Drive Suite 200 Coral Gables,<br />
+            FL 33134 USA
           </p>
         </div>
-        <div class="footer__column">
-          <h4 class="footer__heading">Links</h4>
-          <ul class="footer__list">
-            <li class="footer__item">
+
+        <!-- Groupe liens + newsletter -->
+        <div class="footer__subgroup">
+          <!-- Liens & aide -->
+          <div class="footer__subgroup-part1">
+            <div class="footer__subgroup-part1-a">
+              <span class="footer__heading">Links</span>
               <a href="#" class="footer__link">Home</a>
-            </li>
-            <li class="footer__item">
               <a href="#" class="footer__link">Shop</a>
-            </li>
-            <li class="footer__item">
               <a href="#" class="footer__link">About</a>
-            </li>
-            <li class="footer__item">
               <a href="#" class="footer__link">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__heading">Help</h4>
-          <ul class="footer__list">
-            <li class="footer__item">
+            </div>
+
+            <div class="footer__subgroup-part1-b">
+              <span class="footer__heading">Help</span>
               <a href="#" class="footer__link">Payment Options</a>
-            </li>
-            <li class="footer__item">
               <a href="#" class="footer__link">Returns</a>
-            </li>
-            <li class="footer__item">
               <a href="#" class="footer__link">Privacy Policies</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__heading">Newsletter</h4>
-          <form class="footer__newsletter-form">
-            <input
-              type="email"
-              class="footer__input"
-              placeholder="Enter Your Email Address"
-            />
-            <button type="submit" class="footer__button">SUBSCRIBE</button>
-          </form>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="footer__subgroup-part2">
+            <h4 class="footer__heading">Newsletter</h4>
+            <form class="footer__newsletter-form">
+              <input
+                type="email"
+                class="footer__input"
+                placeholder="Enter Your Email Address"
+              />
+              <button type="submit" class="footer__button">SUBSCRIBE</button>
+            </form>
+          </div>
         </div>
       </div>
+
       <hr class="footer__separator" />
-      <div class="footer__bottom">
-        <p class="footer__copyright">2023 Furniro. All rights reserved</p>
-      </div>
+      <div class="footer__copyright-bar">2023 Furniro. All rights reserved</div>
     </footer>
   </body>
 </html>
