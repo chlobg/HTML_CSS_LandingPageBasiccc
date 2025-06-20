@@ -1,6 +1,7 @@
 /* ========================= */
 /*       GLOBAL STYLES      */
 /* ========================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -25,9 +26,8 @@ body {
 /* ========================= */
 /*           HEADER          */
 /* ========================= */
+
 .header {
-  width: 100%;
-  height: 100px;
   background-color: #ffffff;
 }
 
@@ -36,8 +36,7 @@ body {
   align-items: center;
   justify-content: space-between;
   max-width: 1286px;
-  height: 100px;
-  padding: 0 100px 0 54px;
+  padding: 29px 100px 30px 54px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -45,14 +44,9 @@ body {
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 5px;
-  width: 185px; /* Ensure logo fits */
-  height: 41px;
 }
 
 .header__logo-image {
-  height: 32px;
-  width: 50px;
   display: block;
   border-radius: 4px;
 }
@@ -68,10 +62,8 @@ body {
 .header__menu {
   display: flex;
   list-style: none;
-  gap: 56px;
+  gap: 75px;
   align-items: center;
-  width: 430px;
-  height: 24px;
   top: 38px;
   left: 505px;
 }
@@ -85,38 +77,27 @@ body {
   align-items: center;
 }
 
-.header__menu-link.active {
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 4px 8px;
-}
-
 .header__icons {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 45px;
 }
 
 .header__icon {
-  width: 28px;
-  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .header__icon img {
-  width: 100%;
-  height: 100%;
   object-fit: contain;
 }
 
 /* ========================= */
 /*           HERO            */
 /* ========================= */
+
 .hero {
-  width: 100%;
-  height: 316px;
   position: relative;
   background-image: url("../assets/images/hero__background.jpg");
   background-size: cover;
@@ -137,21 +118,16 @@ body {
 
 .hero__content {
   position: relative;
-  width: 196px;
-  height: 133px;
   text-align: center;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Centrer verticalement */
+  justify-content: center;
 }
 
 .hero__icon {
-  width: 77px;
-  height: 77px;
   display: block;
-  margin-bottom: 20px; /* Espace entre l'icône et le titre */
 }
 
 .hero__title {
@@ -159,15 +135,13 @@ body {
   font-weight: 500;
   line-height: 72px;
   margin: 0;
-  color: #000; /* Assurez-vous que la couleur du texte soit noir comme sur l'image */
+  color: #000;
 }
 
 .hero__breadcrumb {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin-top: 8px;
-  color: #000; /* Assurez-vous que la couleur du texte soit noir comme sur l'image */
+  color: #000;
 }
 
 .hero__breadcrumb span,
@@ -193,8 +167,8 @@ body {
 /* ========================= */
 /*          CONTACT          */
 /* ========================= */
+
 .contact {
-  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 80px 54px;
@@ -219,29 +193,19 @@ body {
 
 .contact__content {
   display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
   justify-content: space-between;
 }
 
 .contact__info {
   flex: 1;
-  min-width: 360px;
-  max-width: 400px;
-  width: 393px;
-  height: 537px;
+  padding-left: 191px;
+  padding-top: 82px;
 }
 
 .contact__info-block {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 30px;
-}
-
-.contact__info-icon {
-  width: 24px;
-  height: 24px;
+  gap: 42px;
 }
 
 .contact__info-icon--address {
@@ -265,28 +229,27 @@ body {
 
 .contact__form {
   flex: 1;
-  min-width: 360px;
-  max-width: 635px;
 }
 
 .contact__form-element {
   display: flex;
   flex-direction: column;
+  padding-left: 52px;
+  padding-top: 119px;
   gap: 36px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .form-group label {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 500px;
   color: #000;
-  margin-bottom: 8px;
-  width: 530px;
-  height: 121px;
+  display: block;
 }
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
   padding: 14px;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -296,15 +259,12 @@ body {
 }
 
 .form-group textarea {
-  height: 166px;
   resize: vertical;
 }
 
 .form-group button {
-  width: 237px;
-  height: 55px;
   background-color: #b88e2f;
-  color: #fff;
+  color: #ffffff;
   border: 1px solid #b88e2f;
   border-radius: 5px;
   font-size: 16px;
@@ -316,72 +276,63 @@ body {
 /* ========================= */
 /*          FEATURES         */
 /* ========================= */
+
 .features {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #faf3ea;
-  padding: 100px 0;
   box-sizing: border-box;
-  width: 100%;
 }
 
 .features__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 55px;
-  max-width: 1240px;
-  width: 100%;
-  padding: 0 2rem;
+  max-width: 1334px;
+  padding: 53px 100px;
 }
 
 .features__item {
   display: flex;
   align-items: center;
-  gap: 15px;
-  flex: 1 1 250px;
-  max-width: 300px;
+  gap: 10px;
 }
 
 .features__icon {
-  width: 60px;
-  height: 60px;
   flex-shrink: 0;
   object-fit: contain;
 }
 
 .features__content {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 4px;
 }
 
 .features__title {
-  font-size: 16px;
-  font-weight: 600;
-  margin: 0;
-  line-height: 1.2;
+  font-family: Poppins;
+  font-weight: 600px;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0%;
   color: #000;
 }
 
 .features__text {
-  font-size: 14px;
   color: #898989;
-  line-height: 1.4;
-  margin: 0;
+  font-family: Poppins;
+  font-weight: 500px;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
 
 /* ========================= */
 /*           FOOTER          */
 /* ========================= */
 .footer {
-  width: 100%;
   background-color: #ffffff;
-  padding: 0 100px 38px;
-  margin-top: 30px;
   box-sizing: border-box;
 }
 
@@ -392,7 +343,6 @@ body {
   max-width: 1240px;
   margin: 0 auto;
   padding-top: 50px;
-  gap: 40px;
   padding-right: 40px;
 }
 
@@ -448,7 +398,6 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  width: 100%;
   max-width: 280px;
 }
 
@@ -477,21 +426,19 @@ body {
   border: none;
   height: 1px;
   background: #d9d9d9;
-  width: 100%;
   margin: 40px 0 20px;
 }
 
 .features__separator {
-  width: 100vw;
-  height: 1px;
   background-color: #ccc;
   border: none;
-  margin: 0;
+  margin-top: 30px;
+  height: 1px;
 }
 
 .footer__copyright-bar {
-  width: 100%;
   max-width: 1240px;
+
   margin: 0 auto;
   font-size: 14px;
   color: #000;
