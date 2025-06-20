@@ -498,41 +498,35 @@ body {
   }
 }
 
-/* CHALLENGE 2 CSS FILES => Blog Page for Furniro */
+/* ===== RESET + BASE ===== */
 
 img {
   max-width: 100%;
   display: block;
+  border-radius: 10px;
 }
 
-/* ===== LAYOUT ===== */
+/* ===== MAIN LAYOUT ===== */
 .blog {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 60px 40px;
+  padding: 106px 97px 97px;
 }
 
 .blog__container {
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
   align-items: flex-start;
-}
+  gap: 30px; 
 
+/* ===== BLOG POSTS SECTION ===== */
 .blog__posts {
-  flex: 3;
+  width: 820px;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 54px;
 }
 
-.sidebar {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-/* ===== BLOG POSTS ===== */
 .blog__post {
   display: flex;
   flex-direction: column;
@@ -569,90 +563,7 @@ img {
 /* ===== PAGINATION ===== */
 .blog__pagination {
   display: flex;
-  gap: 10px;
-  margin-top: 30px;
-}
-
-.blog__page {
-  padding: 8px 14px;
-  background-color: #f5f5f5;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.blog__page--active {
-  background-color: #d6b99f;
-  color: white;
-}
-
-/* ===== SIDEBAR ===== */
-.sidebar__search {
-  position: relative;
-}
-
-.sidebar__input {
-  width: 100%;
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.sidebar__title {
-  font-size: 18px;
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-
-.sidebar__list {
-  list-style: none;
-}
-
-.sidebar__item {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
-  font-size: 15px;
-  color: #444;
-}
-
-.sidebar__recent-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.sidebar__recent-item {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.sidebar__recent-item img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.sidebar__recent-item div p {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.sidebar__recent-item span {
-  font-size: 12px;
-  color: #888;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 992px) {
-  .blog__container {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-  }
+  gap: 16px;
+  margin-top: 54px;
+  justify-content: flex-start;
 }
