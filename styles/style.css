@@ -564,24 +564,43 @@ img {
 /* ===== PAGINATION ===== */
 .blog__pagination {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
   margin-top: 54px;
-  justify-content: flex-start;
+}
+
+.blog__page {
+  padding: 14px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #f9f3eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog__page--active {
+  background-color: #b88e2f;
+  color: #ffffff;
 }
 
 .sidebar {
   width: 393px;
   display: flex;
   flex-direction: column;
-  gap: 41px; /* espace vertical entre catégories et recent posts */
-  padding-top: 84px;
+  gap: 41px;
+  padding-top: 0px;
 }
 
 .sidebar__section--box {
-  border: 1px solid #dcdcdc;
-  padding: 28px 32px;
-  border-radius: 12px;
-  background-color: #ffffff;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   gap: 28px;
