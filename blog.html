@@ -132,11 +132,16 @@
 
         <!-- Sidebar -->
         <aside class="sidebar">
-          <form class="sidebar__search">
-            <input type="text" placeholder="Search..." class="sidebar__input" />
-          </form>
+          <!-- Bloc Search + Categories -->
+          <div class="sidebar__section sidebar__section--box">
+            <form class="sidebar__search">
+              <input
+                type="text"
+                placeholder="Search..."
+                class="sidebar__input"
+              />
+            </form>
 
-          <div class="sidebar__section">
             <h3 class="sidebar__title">Categories</h3>
             <ul class="sidebar__list">
               <li class="sidebar__item">Crafts <span>2</span></li>
@@ -147,7 +152,8 @@
             </ul>
           </div>
 
-          <div class="sidebar__section">
+          <!-- Bloc Recent Posts -->
+          <div class="sidebar__section sidebar__section--box">
             <h3 class="sidebar__title">Recent Posts</h3>
             <ul class="sidebar__recent-list">
               <li class="sidebar__recent-item">
