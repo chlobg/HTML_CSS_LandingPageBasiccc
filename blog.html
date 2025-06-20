@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__logo">
+          <img
+            src="assets/images/header__logo.png"
+            alt="Furniro Logo"
+            class="header__logo-image"
+          />
+          <span class="header__logo-text">Furniro</span>
+        </div>
+        <ul class="header__menu">
+          <li><a href="#" class="header__menu-link">Home</a></li>
+          <li><a href="#" class="header__menu-link">Shop</a></li>
+          <li><a href="#" class="header__menu-link">About</a></li>
+          <li><a href="#" class="header__menu-link">Contact</a></li>
+        </ul>
+        <div class="header__icons">
+          <a href="#" class="header__icon"
+            ><img src="assets/images/header__icon-user.png" alt="User"
+          /></a>
+          <a href="#" class="header__icon"
+            ><img src="assets/images/header__icon-search.png" alt="Search"
+          /></a>
+          <a href="#" class="header__icon"
+            ><img src="assets/images/header__icon-heart.png" alt="Wishlist"
+          /></a>
+          <a href="#" class="header__icon"
+            ><img src="assets/images/header__icon-cart.png" alt="Cart"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Contact</h1>
+        <div class="hero__breadcrumb">
+          <span>Home</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+          <strong>Contact</strong>
+        </div>
+      </div>
+    </section>
+
+    <main class="blog">
+      <div class="blog__container">
+        <!-- Blog Posts -->
+        <section class="blog__posts">
+          <article class="blog__post">
+            <img
+              src="assets/images/blog__image--millennial-design.jpg"
+              alt="Laptop on desk"
+              class="blog__image"
+            />
+            <div class="blog__meta">
+              <span class="blog__author">👤 Admin</span>
+              <span class="blog__date">📅 14 Oct 2022</span>
+              <span class="blog__category">🌲 Wood</span>
+            </div>
+            <h2 class="blog__title">Going all-in with millennial design</h2>
+            <p class="blog__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <a href="#" class="blog__read-more">Read more</a>
+          </article>
+
+          <article class="blog__post">
+            <img
+              src="assets/images/blog__image--decorating.jpg"
+              alt="Decorating planner"
+              class="blog__image"
+            />
+            <div class="blog__meta">
+              <span class="blog__author">👤 Admin</span>
+              <span class="blog__date">📅 14 Oct 2022</span>
+              <span class="blog__category">🧵 Handmade</span>
+            </div>
+            <h2 class="blog__title">Exploring new ways of decorating</h2>
+            <p class="blog__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <a href="#" class="blog__read-more">Read more</a>
+          </article>
+
+          <article class="blog__post">
+            <img
+              src="assets/images/blog__image--handmade-pieces.jpg"
+              alt="Journaling handmade"
+              class="blog__image"
+            />
+            <div class="blog__meta">
+              <span class="blog__author">👤 Admin</span>
+              <span class="blog__date">📅 14 Oct 2022</span>
+              <span class="blog__category">🌲 Wood</span>
+            </div>
+            <h2 class="blog__title">Handmade pieces that took time to make</h2>
+            <p class="blog__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <a href="#" class="blog__read-more">Read more</a>
+          </article>
+
+          <div class="blog__pagination">
+            <button class="blog__page blog__page--active">1</button>
+            <button class="blog__page">2</button>
+            <button class="blog__page">3</button>
+            <button class="blog__page">Next</button>
+          </div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <form class="sidebar__search">
+            <input type="text" placeholder="Search..." class="sidebar__input" />
+          </form>
+
+          <div class="sidebar__section">
+            <h3 class="sidebar__title">Categories</h3>
+            <ul class="sidebar__list">
+              <li class="sidebar__item">Crafts <span>2</span></li>
+              <li class="sidebar__item">Design <span>8</span></li>
+              <li class="sidebar__item">Handmade <span>7</span></li>
+              <li class="sidebar__item">Interior <span>1</span></li>
+              <li class="sidebar__item">Wood <span>6</span></li>
+            </ul>
+          </div>
+
+          <div class="sidebar__section">
+            <h3 class="sidebar__title">Recent Posts</h3>
+            <ul class="sidebar__recent-list">
+              <li class="sidebar__recent-item">
+                <img
+                  src="assets/images/sidebar__recent-image--millennial-design.jpg"
+                  alt="Going all-in with millennial design"
+                  class="sidebar__recent-image"
+                />
+                <div class="sidebar__recent-content">
+                  <p class="sidebar__recent-title">
+                    Going all-in with millennial design
+                  </p>
+                  <span class="sidebar__recent-date">03 Aug 2022</span>
+                </div>
+              </li>
+              <li class="sidebar__recent-item">
+                <img
+                  src="assets/images/sidebar__recent-image--decorating.jpg"
+                  alt="Exploring new ways of decorating"
+                  class="sidebar__recent-image"
+                />
+                <div class="sidebar__recent-content">
+                  <p class="sidebar__recent-title">
+                    Exploring new ways of decorating
+                  </p>
+                  <span class="sidebar__recent-date">03 Aug 2022</span>
+                </div>
+              </li>
+              <li class="sidebar__recent-item">
+                <img
+                  src="assets/images/sidebar__recent-image--handmade-pieces.jpg"
+                  alt="Handmade pieces"
+                  class="sidebar__recent-image"
+                />
+                <div class="sidebar__recent-content">
+                  <p class="sidebar__recent-title">
+                    Handmade pieces that took time to make
+                  </p>
+                  <span class="sidebar__recent-date">03 Aug 2022</span>
+                </div>
+              </li>
+              <li class="sidebar__recent-item">
+                <img
+                  src="assets/images/sidebar__recent-image--milan.jpg"
+                  alt="Modern home in Milan"
+                  class="sidebar__recent-image"
+                />
+                <div class="sidebar__recent-content">
+                  <p class="sidebar__recent-title">Modern home in Milan</p>
+                  <span class="sidebar__recent-date">03 Aug 2022</span>
+                </div>
+              </li>
+              <li class="sidebar__recent-item">
+                <img
+                  src="assets/images/sidebar__recent-image--office-redesign.jpg"
+                  alt="Colorful office redesign"
+                  class="sidebar__recent-image"
+                />
+                <div class="sidebar__recent-content">
+                  <p class="sidebar__recent-title">Colorful office redesign</p>
+                  <span class="sidebar__recent-date">03 Aug 2022</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <section class="features">
+      <div class="features__container">
+        <div class="features__item">
+          <img
+            src="assets/images/features__icon-quality.png"
+            alt="High Quality"
+            class="features__icon"
+          />
+          <div class="features__content">
+            <h3 class="features__title">High Quality</h3>
+            <p class="features__text">Crafted from top materials</p>
+          </div>
+        </div>
+        <div class="features__item">
+          <img
+            src="assets/images/features__icon-warranty.png"
+            alt="Warranty Protection"
+            class="features__icon"
+          />
+          <div class="features__content">
+            <h3 class="features__title">Warranty Protection</h3>
+            <p class="features__text">Over 2 years</p>
+          </div>
+        </div>
+        <div class="features__item">
+          <img
+            src="assets/images/features__icon-shipping.png"
+            alt="Free Shipping"
+            class="features__icon"
+          />
+          <div class="features__content">
+            <h3 class="features__title">Free Shipping</h3>
+            <p class="features__text">Order over 150 $</p>
+          </div>
+        </div>
+        <div class="features__item">
+          <img
+            src="assets/images/features__icon-support.png"
+            alt="24 / 7 Support"
+            class="features__icon"
+          />
+          <div class="features__content">
+            <h3 class="features__title">24 / 7 Support</h3>
+            <p class="features__text">Dedicated support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <hr class="features__separator" />
+      <div class="footer__container">
+        <div class="footer__column">
+          <h2 class="footer__brand">Furniro.</h2>
+          <p class="footer__address">
+            400 University Drive Suite 200 Coral Gables,<br />
+            FL 33134 USA
+          </p>
+        </div>
+
+        <div class="footer__subgroup">
+          <div class="footer__subgroup-part1">
+            <h4 class="footer__heading">Links</h4>
+            <a href="#" class="footer__link">Home</a>
+            <a href="#" class="footer__link">Shop</a>
+            <a href="#" class="footer__link">About</a>
+            <a href="#" class="footer__link">Contact</a>
+          </div>
+
+          <div class="footer__subgroup-part2">
+            <h4 class="footer__heading">Help</h4>
+            <a href="#" class="footer__link">Payment Options</a>
+            <a href="#" class="footer__link">Returns</a>
+            <a href="#" class="footer__link">Privacy Policies</a>
+          </div>
+
+          <div class="footer__subgroup-newsletter">
+            <h4 class="footer__heading">Newsletter</h4>
+            <form class="footer__newsletter-form">
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                class="footer__input"
+              />
+              <button type="submit" class="footer__button">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer__separator" />
+
+      <div class="footer__copyright-bar">2023 Furniro. All rights reserved</div>
+    </footer>
+  </body>
+</html>
