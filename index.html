@@ -16,69 +16,47 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body class="landing-page">
+  <body>
+  <div class="landing-page">
+
     <!-- Header -->
     <header class="header">
-      <div class="header__wrapper">
-        <nav class="header__nav">
-          <div class="header__logo">
-            <img
-              src="assets/images/header__logo.png"
-              alt="logo"
-              class="header__logo-image"
-            />
-            <span class="header__logo-text">Furniro</span>
-          </div>
+      <nav class="header__nav">
+        <div class="header__logo">
+          <img src="assets/images/header__logo.png" alt="logo" class="header__logo-image" />
+          <span class="header__logo-text">Furniro</span>
+        </div>
 
-          <ul class="header__menu">
-            <li><a href="#" class="header__menu-link">Home</a></li>
-            <li><a href="#" class="header__menu-link">Shop</a></li>
-            <li><a href="#" class="header__menu-link">About</a></li>
-            <li><a href="#" class="header__menu-link">Contact</a></li>
-          </ul>
+        <ul class="header__menu">
+          <li><a href="#" class="header__menu-link active">Home</a></li>
+          <li><a href="#" class="header__menu-link">Shop</a></li>
+          <li><a href="#" class="header__menu-link">About</a></li>
+          <li><a href="#" class="header__menu-link">Contact</a></li>
+        </ul>
 
-          <div class="header__icons">
-            <a href="#" class="header__icon"
-              ><img src="assets/images/header__icon-user.png" alt="User"
-            /></a>
-            <a href="#" class="header__icon"
-              ><img src="assets/images/header__icon-search.png" alt="Search"
-            /></a>
-            <a href="#" class="header__icon"
-              ><img src="assets/images/header__icon-heart.png" alt="Wishlist"
-            /></a>
-            <a href="#" class="header__icon"
-              ><img src="assets/images/header__icon-cart.png" alt="Cart"
-            /></a>
-          </div>
-        </nav>
-      </div>
+        <div class="header__icons">
+          <a href="#" class="header__icon"><img src="assets/images/header__icon-user.png" alt="User" /></a>
+          <a href="#" class="header__icon"><img src="assets/images/header__icon-search.png" alt="Search" /></a>
+          <a href="#" class="header__icon"><img src="assets/images/header__icon-heart.png" alt="Wishlist" /></a>
+          <a href="#" class="header__icon"><img src="assets/images/header__icon-cart.png" alt="Cart" /></a>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero__content">
-        <img
-          src="assets/images/header__logo.png"
-          alt="Furniro Icon"
-          class="hero__icon"
-        />
+        <img src="assets/images/header__logo.png" alt="Furniro" class="hero__icon" />
         <h1 class="hero__title">Contact</h1>
-      </div>
-      <div class="hero__breadcrumb">
-        <span>Home</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <polyline points="9 18 15 12 9 6" />
-        </svg>
-        <strong>Contact</strong>
+        <div class="hero__breadcrumb">
+          <span>Home</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+          <strong>Contact</strong>
+        </div>
       </div>
     </section>
 
@@ -86,193 +64,149 @@
     <section class="contact">
       <h2 class="contact__title">Get In Touch With Us</h2>
       <p class="contact__subtitle">
-        For More Information About Our Product & Services. Please Feel Free To
-        Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not
-        Hesitate!
+        For More Information About Our Product & Services. Please Feel Free To Drop Us An Email.
+        Our Staff Always Be There To Help You Out. Do Not Hesitate!
       </p>
 
       <div class="contact__content">
+        <!-- LEFT -->
         <div class="contact__info">
           <div class="contact__info-block">
-            <img
-              src="assets/images/contact__icon-address.png"
-              alt="Address Icon"
-              class="contact__info-icon"
-            />
+            <img src="assets/images/contact__icon-address.png" alt="Address Icon" class="contact__info-icon contact__info-icon--address" />
             <div>
               <h3 class="contact__info-title">Address</h3>
-              <p class="contact__info-text">
-                236 5th SE Avenue, New York NY10000, United States
-              </p>
+              <p class="contact__info-text">236 5th SE Avenue, New York NY10000, United States</p>
             </div>
           </div>
           <div class="contact__info-block">
-            <img
-              src="assets/images/contact__icon-phone.png"
-              alt="Phone Icon"
-              class="contact__info-icon"
-            />
+            <img src="assets/images/contact__icon-phone.png" alt="Phone Icon" class="contact__info-icon" />
             <div>
               <h3 class="contact__info-title">Phone</h3>
               <p class="contact__info-text">
-                Mobile: +(84) 546-6789<br />Hotline: +(84) 456-6789
+                Mobile: +(84) 546-6789<br />
+                Hotline: +(84) 456-6789
               </p>
             </div>
           </div>
           <div class="contact__info-block">
-            <img
-              src="assets/images/contact__icon-clock.png"
-              alt="Clock Icon"
-              class="contact__info-icon"
-            />
+            <img src="assets/images/contact__icon-clock.png" alt="Clock Icon" class="contact__info-icon" />
             <div>
               <h3 class="contact__info-title">Working Time</h3>
               <p class="contact__info-text">
-                Monday–Friday: 9:00 – 22:00<br />Saturday–Sunday: 9:00 – 21:00
+                Monday–Friday: 9:00 – 22:00<br />
+                Saturday–Sunday: 9:00 – 21:00
               </p>
             </div>
           </div>
         </div>
 
+        <!-- RIGHT -->
         <div class="contact__form">
           <form class="contact__form-element">
-            <label for="name" class="contact__form-label">Your name</label>
-            <input
-              type="text"
-              id="name"
-              class="contact__form-input"
-              placeholder="Abc"
-            />
-
-            <label for="email" class="contact__form-label">Email address</label>
-            <input
-              type="email"
-              id="email"
-              class="contact__form-input"
-              placeholder="Abc@def.com"
-            />
-
-            <label for="subject" class="contact__form-label">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              class="contact__form-input"
-              placeholder="This is an optional"
-            />
-
-            <label for="message" class="contact__form-label">Message</label>
-            <textarea
-              id="message"
-              rows="6"
-              class="contact__form-textarea"
-              placeholder="Hi! i’d like to ask about..."
-            ></textarea>
-
-            <button type="submit" class="contact__form-button">Submit</button>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Abc" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" placeholder="abc@def.com" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="This is an optional" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="6" placeholder="Hi! I’d like to ask about..."></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
           </form>
         </div>
       </div>
     </section>
 
-    <section class="features">
-      <div class="features__item">
-        <img
-          src="assets/images/features__icon-quality.png"
-          alt="High Quality"
-          class="features__icon"
-        />
-        <div class="features__content">
-          <h3 class="features__title">High Quality</h3>
-          <p class="features__text">crafted from top materials</p>
-        </div>
+ <section class="features">
+ 
+  <div class="features__container">
+    <div class="features__item">
+      <img src="assets/images/features__icon-quality.png" alt="High Quality" class="features__icon" />
+      <div class="features__content">
+        <h3 class="features__title">High Quality</h3>
+        <p class="features__text">Crafted from top materials</p>
       </div>
-      <div class="features__item">
-        <img
-          src="assets/images/features__icon-warranty.png"
-          alt="Warranty Protection"
-          class="features__icon"
-        />
-        <div class="features__content">
-          <h3 class="features__title">Warranty Protection</h3>
-          <p class="features__text">Over 2 years</p>
-        </div>
+    </div>
+    <div class="features__item">
+      <img src="assets/images/features__icon-warranty.png" alt="Warranty Protection" class="features__icon" />
+      <div class="features__content">
+        <h3 class="features__title">Warranty Protection</h3>
+        <p class="features__text">Over 2 years</p>
       </div>
-      <div class="features__item">
-        <img
-          src="assets/images/features__icon-shipping.png"
-          alt="Free Shipping"
-          class="features__icon"
-        />
-        <div class="features__content">
-          <h3 class="features__title">Free Shipping</h3>
-          <p class="features__text">Order over 150 $</p>
-        </div>
+    </div>
+    <div class="features__item">
+      <img src="assets/images/features__icon-shipping.png" alt="Free Shipping" class="features__icon" />
+      <div class="features__content">
+        <h3 class="features__title">Free Shipping</h3>
+        <p class="features__text">Order over 150 $</p>
       </div>
-      <div class="features__item">
-        <img
-          src="assets/images/features__icon-support.png"
-          alt="24 / 7 Support"
-          class="features__icon"
-        />
-        <div class="features__content">
-          <h3 class="features__title">24 / 7 Support</h3>
-          <p class="features__text">Dedicated support</p>
-        </div>
+    </div>
+    <div class="features__item">
+      <img src="assets/images/features__icon-support.png" alt="24 / 7 Support" class="features__icon" />
+      <div class="features__content">
+        <h3 class="features__title">24 / 7 Support</h3>
+        <p class="features__text">Dedicated support</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
 
-    <footer class="footer">
-      <hr class="features__separator" />
+   <footer class="footer">
+     <hr class="features__separator" />
+  <div class="footer__container">
+    <div class="footer__column">
+      <h2 class="footer__brand">Furniro.</h2>
+      <p class="footer__address">
+        400 University Drive Suite 200 Coral Gables,<br />
+        FL 33134 USA
+      </p>
+    </div>
 
-      <div class="footer__container">
-        <!-- Colonne marque + adresse -->
-        <div class="footer__column">
-          <h2 class="footer__brand">Furniro.</h2>
-          <p class="footer__address">
-            400 University Drive Suite 200 Coral Gables,<br />
-            FL 33134 USA
-          </p>
-        </div>
-
-        <!-- Groupe liens + newsletter -->
-        <div class="footer__subgroup">
-          <!-- Liens & aide -->
-          <div class="footer__subgroup-part1">
-            <div class="footer__subgroup-part1-a">
-              <span class="footer__heading">Links</span>
-              <a href="#" class="footer__link">Home</a>
-              <a href="#" class="footer__link">Shop</a>
-              <a href="#" class="footer__link">About</a>
-              <a href="#" class="footer__link">Contact</a>
-            </div>
-
-            <div class="footer__subgroup-part1-b">
-              <span class="footer__heading">Help</span>
-              <a href="#" class="footer__link">Payment Options</a>
-              <a href="#" class="footer__link">Returns</a>
-              <a href="#" class="footer__link">Privacy Policies</a>
-            </div>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="footer__subgroup-part2">
-            <h4 class="footer__heading">Newsletter</h4>
-            <form class="footer__newsletter-form">
-              <input
-                type="email"
-                class="footer__input"
-                placeholder="Enter Your Email Address"
-              />
-              <button type="submit" class="footer__button">SUBSCRIBE</button>
-            </form>
-          </div>
-        </div>
+    <div class="footer__subgroup">
+      <div class="footer__subgroup-part1">
+        <h4 class="footer__heading">Links</h4>
+        <a href="#" class="footer__link">Home</a>
+        <a href="#" class="footer__link">Shop</a>
+        <a href="#" class="footer__link">About</a>
+        <a href="#" class="footer__link">Contact</a>
       </div>
 
-      <hr class="footer__separator" />
-      <div class="footer__copyright-bar">2023 Furniro. All rights reserved</div>
-    </footer>
+      <div class="footer__subgroup-part2">
+        <h4 class="footer__heading">Help</h4>
+        <a href="#" class="footer__link">Payment Options</a>
+        <a href="#" class="footer__link">Returns</a>
+        <a href="#" class="footer__link">Privacy Policies</a>
+      </div>
+
+      <div class="footer__subgroup-newsletter">
+        <h4 class="footer__heading">Newsletter</h4>
+        <form class="footer__newsletter-form">
+          <input type="email" placeholder="Enter Your Email Address" class="footer__input" />
+          <button type="submit" class="footer__button">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <hr class="footer__separator" />
+
+  <div class="footer__copyright-bar">
+    2023 Furniro. All rights reserved
+  </div>
+</footer>
+
   </body>
 </html>
