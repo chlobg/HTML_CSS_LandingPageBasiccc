@@ -544,6 +544,11 @@ img {
   display: block;
 }
 
+.blog__image {
+  width: 817px;
+  height: 500px;
+}
+
 .blog__meta {
   display: flex;
   gap: 35px;
@@ -672,6 +677,7 @@ img {
 .sidebar__recent-list {
   list-style: none;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 39px;
   padding: 16px 65px 16px 76px;
