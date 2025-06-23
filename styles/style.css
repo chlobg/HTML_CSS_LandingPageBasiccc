@@ -663,7 +663,7 @@ img {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 36px;
   padding: 0px 65px 61px 77px;
 }
 
